@@ -1,0 +1,189 @@
+---
+title: "STATS 250 Lab 5 Report"
+author: "YOUR NAME GOES HERE IN QUOTES"
+date: "TODAY'S DATE GOES HERE IN QUOTES"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    theme: lumen
+    css: assets/styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+Welcome to Lab 5! Complete the following exercises designed to help you understand the simulation process for making inference about a population proportion. It is important that you keep your answers inside the ".answer" blocks. Do NOT delete the three colon blocks (:::) and keep your responses between them. Use the tutorial for help, and feel free to ask questions on Piazza or email your lab instructor.
+
+Depending on your instruction method (synchronous or asynchronous), complete the following exercises collaboratively.
+
+1.  **Asynchronous remote:** Use Piazza for asynchronous collaboration.
+
+**Collaborators:** If applicable, replace this text with the names of anyone you collaborated with on this project.
+
+# Lab Assignment
+
+In this assignment, we won't be working with data. Instead, we'll be simulating it!
+
+## Background
+
+:::{.background}
+[Monitoring the Future](http://www.monitoringthefuture.org/) "is an ongoing study of the behaviors, attitudes, and values of Americans from adolescence through adulthood. Each year, a total of approximately 50,000 8th, 10th and 12th grade students are surveyed (12th graders since 1975, and 8th and 10th graders since 1991)." The study is conducted through the University of Michigan Survey Research Center and funded through the National Institute on Drug Abuse (part of the National Institutes of Health). 
+
+Monitoring the Future estimates that, in 2020, [55.3% of American 12th graders consumed alcohol](https://www.drugabuse.gov/drug-topics/related-topics/trends-statistics/infographics/monitoring-future-2020-survey-results) at some point over the past year. 
+
+In the Winter 2021 STATS 250 Student Survey, 1024 STATS 250 students out of 1533 reported occasional or daily use of alcohol. **Is the proportion of STATS 250 students who self-report alcohol consumption significantly higher than the proportion of American 12th graders who consumed alcohol?** 
+:::
+
+## Question 1
+
+::: {.question}
+Start by stating your hypotheses (as a sentence, no symbols). Define both the null and alternative.
+:::
+
+::: {.answer}
+
+$H_0$: *Replace this text with your null hypothesis*
+
+$H_A$: *Replace this text with your alternative hypothesis*
+
+:::
+
+
+## Question 2
+
+::: {.question}
+Use R as a calculator to estimate $\hat{p}$, the observed (i.e., from our data) proportion  of STATS 250 students who report occasional or daily alcohol use. You must use R to do this calculation.
+:::
+
+::: {.answer}
+```{r question2, error = T}
+# Replace this comment with code required for Question 2. (Remember that this text is a comment, so R ignores it; you can delete it if you want.)
+
+```
+:::
+
+## Question 3
+
+:::{.question}
+Imagine that we're simulating this scenario using blue and yellow poker chips. State the correspondence between the real study and the physical simulation by filling in the table below.
+:::
+
+:::{.answer}
+
+|                   | **Assuming the chance model...** |
+|-------------------|----------------------------------|
+|          One draw | *Write your answer here* | 
+|   Blue poker chip | *Write your answer here* | 
+| Yellow poker chip | *Write your answer here* | 
+|    Chance of blue | *Write your answer here* | 
+|    One repetition | *Write your answer here* | 
+
+:::
+
+## Question 4
+
+:::{.question}
+Let's set up our bag of poker chips. Create a vector called `bagOfChips` that consists of appropriate numbers of `"blue"` and `"yellow"` chips. `bagOfChips` should contain 1000 elements in total.
+:::
+
+:::{.answer}
+```{r question4, error = T}
+# Replace this comment with code required for Question 4. (Remember that this text is a comment, so R ignores it; you can delete it if you want.)
+
+```
+
+:::
+
+## Question 5
+
+:::{.question}
+Set the seed for the random number generator to 21.
+:::
+
+:::{.answer}
+```{r question5, error = T}
+# Replace this comment with code required for Question 5. (Remember that this text is a comment, so R ignores it; you can delete it if you want.)
+
+```
+:::
+
+
+## Question 6
+:::{.question}
+Use the `replicate()` function to run the simulation just 1 time, making sure to assign your results a name. Then, use code to figure out the number of blue poker chips and the number of yellow poker chips from your simulation.
+:::
+
+:::{.answer}
+```{r question6, error = T}
+# Replace this comment with code required for Question 6. (Remember that this text is a comment, so R ignores it; you can delete it if you want.)
+
+```
+:::
+
+
+## Question 7
+:::{.question}
+Use the `replicate()` function to run the simulation 100 times, making sure to assign your results a name. 
+:::
+
+:::{.answer}
+```{r question7, error = T}
+# Replace this comment with code required for Question 7. (Remember that this text is a comment, so R ignores it; you can delete it if you want.)
+
+```
+:::
+
+## Question 8 
+:::{.question}
+Make a histogram of your simulation results from Question 7, with an appropriate title and axis labels. Draw a vertical line at $\hat{p}$, the observed (from data) proportion of STATS 250 students who report occasional or daily alcohol consumption.
+:::
+
+:::{.answer}
+```{r question8, error = T}
+# Replace this comment with code required for Question 8. (Remember that this text is a comment, so R ignores it; you can delete it if you want.)
+
+```
+:::
+
+## Question 9
+:::{.question}
+Compute the p-value, the proportion of simulated results as extreme or more extreme than $\hat{p}$.
+:::
+
+:::{.answer}
+```{r question9, error = T}
+# Replace this comment with code required for Question 9. (Remember that this text is a comment, so R ignores it; you can delete it if you want.)
+
+```
+:::
+
+
+
+# Wrap-Up and Submission
+
+At the top of the document, make sure you've changed the `author` field to your name (in quotes!). If you'd like, change the date as well.
+
+When you've finished the lab, click the **Knit** button one last time.
+
+## Submission instructions
+
+### If you're using RStudio Cloud
+
+1.  In the Files pane, check the box next to `lab05-report.html`.
+2.  Click More \> Export...
+3.  Click Download and save the file on your computer in a folder you'll remember and be able to find later. You can just call the file `lab05-report.html` or whatever else you'd like (as long as you remember what you called it).
+
+### If you're using RStudio installed on your computer
+
+1.  locate the `lab05-report.html` file on your computer. The file will be saved in the location indicated at the top of the files pane.
+
+### Submission to Canvas
+
+1.  Click the "Assignments" panel on the left side of the page. Scroll to find "Lab 5", and open the assignment. Click "Submit Assignment".
+2.  Towards the bottom of the page, you'll be able to choose `lab05-report.html` from the folder you saved it in from RStudio Cloud or noted if you're using RStudio Desktop. **You will only be able to upload a .html file -- do not upload any other file type.**
+3.  Click "Submit Assignment". You're done!
